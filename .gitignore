@@ -1,0 +1,6 @@
+*.pcap
+*.pcapng
+*.eml
+*.msg
+.env
+secrets.*

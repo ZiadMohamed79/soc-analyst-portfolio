@@ -1,0 +1,15 @@
+# Client traffic
+ip.addr == 10.0.2.15
+ip.src == 10.0.2.15
+ip.dst == 10.0.2.15
+!(ip.addr == 10.0.2.15)
+
+# Protocol filters
+dns
+udp
+tcp
+tcp.flags.syn == 1
+http
+http.request.method == "GET"
+http.request.method == "POST"
+tls.handshake.type == 1
